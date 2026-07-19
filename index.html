@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Islamabad Football Grounds — Book a Ground</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="ballLayer"><div id="ballGlow"></div><div id="ball"></div></div>
+
+<nav class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo"><span class="dot"></span>Islamabad Football Grounds</a>
+    <ul class="nav-links">
+      <li><a href="#grounds">Grounds</a></li>
+      <li><a href="#how">How it works</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-panel" id="mobilePanel">
+  <a href="#grounds">Grounds</a>
+  <a href="#how">How it works</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<header class="hero" id="top">
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow">Islamabad, all sectors</p>
+      <h1>Book a football ground in <span>Islamabad</span> in 2 minutes.</h1>
+      <p>See real grounds near you, check the price per hour, and book a time slot. No calls, no waiting.</p>
+      <div class="hero-actions">
+        <a href="#grounds" class="btn btn-primary">See all grounds</a>
+        <a href="#how" class="btn btn-ghost">How booking works</a>
+      </div>
+      <div class="hero-badges">
+        <span class="badge"><span class="ic">●</span> Open 24 hours</span>
+        <span class="badge"><span class="ic">●</span> 6 grounds listed</span>
+        <span class="badge"><span class="ic">●</span> Prices in PKR</span>
+      </div>
+    </div>
+    <div class="hero-stage" id="heroStage">
+      <div class="pitch-floor"></div>
+      <div class="goal goal-left" id="goalLeft"></div>
+      <div class="goal goal-right" id="goalRight"></div>
+      <div class="stage-ball" id="stageBall" role="button" tabindex="0" aria-label="Kick the ball toward a goal"></div>
+      <div class="goal-text" id="goalText">GOAL!</div>
+      <div class="scroll-hint">tap the ball to kick it — scroll down to follow it</div>
+    </div>
+  </div>
+</header>
+
+<section id="how">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Simple steps</p>
+        <h2>How booking works</h2>
+      </div>
+      <p>Three steps. No app to download, no account needed to browse.</p>
+    </div>
+    <div class="steps">
+      <div class="step"><span class="n">Step 1</span><h3>Pick a ground</h3><p>Choose a ground near you from the list below. Check the price and timing.</p></div>
+      <div class="step"><span class="n">Step 2</span><h3>Choose a time</h3><p>Grounds are open 24 hours, so pick any slot that works for you.</p></div>
+      <div class="step"><span class="n">Step 3</span><h3>Confirm your booking</h3><p>Enter your name and number, confirm the slot, and you're done.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="grounds">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">6 grounds in Islamabad</p>
+        <h2>Choose your ground</h2>
+      </div>
+      <p>All grounds below are real football venues in Islamabad. Timing shown is 24 hours unless noted.</p>
+    </div>
+    <div class="grounds" id="groundsGrid"></div>
+    <p class="price-note">Note: prices shown are approximate starting rates per hour, based on typical turf rental rates in Islamabad. Please confirm the exact price and slot availability with the ground directly before visiting.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="cta-band">
+      <h2>Can't find your ground?</h2>
+      <p>Message us and we'll add it to the list.</p>
+      <a href="#" class="btn btn-primary">Contact us</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <a href="#top" class="logo"><span class="dot"></span>Islamabad Football Grounds</a>
+        <p>A simple way to find and book football grounds across Islamabad. All 6 grounds listed are open 24 hours.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Explore</h4>
+        <a href="#grounds">Grounds</a>
+        <a href="#how">How it works</a>
+      </div>
+      <div class="foot-col">
+        <h4>Support</h4>
+        <a href="#contact">Contact us</a>
+        <a href="#">Add your ground</a>
+      </div>
+    </div>
+    <div class="foot-bottom">© 2026 Islamabad Football Grounds — Demo booking page, prices are estimates.</div>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal">
+    <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+    <div id="modalForm">
+      <h3 id="modalGroundName">Book Ground</h3>
+      <p class="sub">Open 24 hours — pick any slot below.</p>
+      <div class="field"><label>Your name</label><input type="text" placeholder="e.g. Ahmed Khan"></div>
+      <div class="field"><label>Phone number</label><input type="tel" placeholder="03xx-xxxxxxx"></div>
+      <div class="field"><label>Date</label><input type="date"></div>
+      <div class="field">
+        <label>Time slot</label>
+        <select>
+          <option>6:00 AM – 7:00 AM</option>
+          <option>7:00 AM – 8:00 AM</option>
+          <option selected>6:00 PM – 7:00 PM</option>
+          <option>7:00 PM – 8:00 PM</option>
+          <option>8:00 PM – 9:00 PM</option>
+          <option>9:00 PM – 10:00 PM</option>
+          <option>11:00 PM – 12:00 AM</option>
+        </select>
+      </div>
+      <button class="btn btn-primary btn-sm" id="confirmBtn">Confirm booking</button>
+    </div>
+    <div class="modal-success" id="modalSuccess">
+      <div class="ic">⚽</div>
+      <h3>Slot requested!</h3>
+      <p class="sub">This is a demo — no real booking was made. In the full version, the ground would confirm your slot here.</p>
+      <button class="btn btn-ghost btn-sm" id="modalDone">Close</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
